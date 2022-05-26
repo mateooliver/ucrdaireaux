@@ -1,38 +1,97 @@
-.App {
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Navar{
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(0, 1, 39);
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.logoMenu{
+  width: 150px;
+  height: 150px;
+
+}
+
+.footer{
+  margin-top:3% ;
+  position: static;
+  bottom: 0vh;
+  background-color: brown;
+  width: 100vw;
+  height:15vh;
+
+}
+/* estilo de las cards */
+.tarjeta{
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid dimgray;
+  border-radius: 5px;
+  background-image: url('./img/tarjetaBack.png');
+  background-size: cover;
+  width: fit-content;
+  padding: 10px;
+  margin: 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tarjeta:hover{
+  border: 2px solid brown;
+}
+.nombre{
+  font-size: 22px;
+  font-weight: bold;
+  color: #464646;
+}
+.profesion{
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.telefono{
+  font-size: 18px;
+  font-style: italic;
+  color: #6c6c6c;
+}
+.mensaje{
+  font-size: 14px;
+  font-style: italic;
+  color: #6c6c6c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.opciones{
+height:350px;
+border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.organigrama{
+  text-align: center;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height:173px;
+  background-color: rgb(76, 76, 76);
+  margin: 0 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.sugerencias{
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height:172px;
+  background-color: rgba(96, 37, 37, 0.5);
+  margin: 5px 5px 0 5px;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sumate{
+  text-transform: none;
+  color: #335cae;
+  position: absolute;
+  top: 78vh;
+  left: 85vw;
 }
