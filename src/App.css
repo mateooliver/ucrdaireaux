@@ -19,11 +19,13 @@ html{
 
 .footer{
   margin-top:3% ;
-  position: static;
-  bottom: 0vh;
   background-color: brown;
   width: 100vw;
-  height:15vh;
+  height:17vh;
+  position:static;
+  bottom:0vh;
+ 
+
 
 }
 /* estilo de las cards */
@@ -90,8 +92,38 @@ border-radius: 10px;
 }
 .sumate{
   text-transform: none;
-  color: #335cae;
-  position: absolute;
+  text-decoration: none;
+  position: sticky;
   top: 78vh;
-  left: 85vw;
+  margin-left: 85vw;
+}
+.stiloFont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color:#6c6c6c;
+}
+.tarjetas{
+  margin: auto;
+  max-width: 80vw;
+  flex-wrap: wrap;
+
+}
+.iconosRedes{
+  width: 25px;
+  height: 25px;
+  margin-top: -10px;
+
+}
+
+/* dispositivos */
+
+@media (max-width: 820px) {
+.tarjetas{
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  margin: auto;
+
+}
 }
