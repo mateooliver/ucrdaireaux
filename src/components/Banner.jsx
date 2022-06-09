@@ -1,22 +1,29 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Organigrama from './Organigrama';
-import Sugerencia from './Sugerencia'
 import CarouselIndex from './Carousel';
+import banner1 from '../img/banner1.png'
 
 const Banner = () => {
   return (
-    <div>
+    <div className='marginItemslist'>
           <CarouselIndex/>
-    <div className='d-flex justify-content-around '>
+    <div className='cardsIndex justify-content-around '>
   
-      <div className='d-flex'>
-        <Link  to='/bolsa' >
-          <img alt='Banner' style={{height:"350px"}}  src={require('/Users/mateooliver/Documents/Comite/Bolsa De Trabajo/bolsa/src/img/banner1.png')} />
+      <div className='cardsIndex'>
+        <Link  to='/bolsa' className='mx-auto' >
+          <img alt='Banner' className='bannerBolsa' src={banner1} />
         </Link>
           <div className='opciones'>
               <Organigrama/>
-              <Sugerencia/>
+              <Link to={'/Sugerencia'} style={{textDecoration:"none"}} > 
+                    <div>
+                      <div className='sugerencias d-flex align-items-center'>
+                          Sugerencias anonimas
+                      </div>
+                    </div>
+    </Link>
+             
           </div>
         </div>
     </div>

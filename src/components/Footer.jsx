@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='d-flex justify-content-center'>
-        <p className='mt-3 text-dark' style={{fontSize:"9px",fontStyle:"italic"}}>Esta pagina fue creada por <span className='fw-bolder'>Mateo Oliver</span>, en donacion a UCR Daireaux. Lenguaje React.js</p>
+        <p className='mt-3 text-dark' style={{fontSize:"9px",fontStyle:"italic"}}>Esta pagina fue creada por <span className='fw-bolder'>Mateo Oliver</span>, en donacion a UCR Daireaux. En React.js</p>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel'
 const CarouselIndex = () => {
   return (
     <div>
-        <Carousel className=' mx-auto my-3' style={{width:"73.8vw"}}>
+        <Carousel className=' mx-auto my-3 carousel' >
             <Carousel.Item>
                 <img
                 className="d-block w-100"

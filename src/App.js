@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemContainer from './components/ItemContainer';
 import Organigrama from './components/Organigrama';
 import CargaDatos from './components/cargaDatos';
+import Sugerencia from './components/Sugerencia';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path='/' element={<Banner/>} />
               <Route path='*' element={<Navigate to="/"/>} />
               <Route path="/bolsa" element={<ItemContainer/>} />
+              <Route path="/Sugerencia" element={<Sugerencia/>} />
               <Route path='/organigrama' element={<Organigrama/>} />
               <Route path='/cargaDatos' element={<CargaDatos/>} />
           </Routes>

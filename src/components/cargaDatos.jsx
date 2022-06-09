@@ -48,7 +48,7 @@ const CargaDatos = () => {
     
   return (
     <div style={{height:"52vh"}}>
-      <h1 className='fs-5 text-white bg-secondary mx-auto text-center col-6 fw-bold p-2 rounded-3'>Carga tus datos aqui para que aparezcan en la bolsa de trabajo</h1>
+      <h1 className='fs-5 text-white bg-secondary mx-auto text-center bienvenidos fw-bold p-2 rounded-3'>Carga tus datos aqui para que aparezcan en la bolsa de trabajo</h1>
       <form className=' d-flex flex-column col-5 mx-auto mt-4 ' onSubmit={EnviarDatos}>
         <input name='nombre' className='my-2 input-group-text text-start' type="text" placeholder='Nombre y Apellido' id='nombre' onChange={handleChange}  value={nombre}/>
         <input name="profesion" className='my-2 input-group-text text-start' type="text" placeholder='a que te dedicas' id='profesion' onChange={handleProfesion} value={profesion}/>
@@ -60,7 +60,7 @@ const CargaDatos = () => {
             <div className='mx-2'> No
             <input type="checkbox" className='mx-1' name="whatsapp" /></div>
         </div>
-        <button className='btn btn-outline-secondary col-2 mx-auto my-2' onClick={handleNavigate}>Enviar</button>
+        <button className='btn btn-outline-secondary  mx-auto my-2' onClick={handleNavigate}>Enviar</button>
       </form>
     </div>
   )
